@@ -13,6 +13,7 @@
 		544D1A3F22D05805009F8B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544D1A3E22D05805009F8B2B /* Assets.xcassets */; };
 		544D1A4222D05805009F8B2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544D1A4122D05805009F8B2B /* Preview Assets.xcassets */; };
 		544D1A4522D05805009F8B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544D1A4322D05805009F8B2B /* LaunchScreen.storyboard */; };
+		544D1A4D22D0682D009F8B2B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A4C22D0682D009F8B2B /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		544D1A4122D05805009F8B2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		544D1A4422D05805009F8B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		544D1A4622D05805009F8B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544D1A4C22D0682D009F8B2B /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				544D1A3822D057FF009F8B2B /* AppDelegate.swift */,
 				544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */,
 				544D1A3C22D057FF009F8B2B /* ContentView.swift */,
+				544D1A4C22D0682D009F8B2B /* Images.swift */,
 				544D1A3E22D05805009F8B2B /* Assets.xcassets */,
 				544D1A4322D05805009F8B2B /* LaunchScreen.storyboard */,
 				544D1A4622D05805009F8B2B /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				544D1A3922D057FF009F8B2B /* AppDelegate.swift in Sources */,
+				544D1A4D22D0682D009F8B2B /* Images.swift in Sources */,
 				544D1A3B22D057FF009F8B2B /* SceneDelegate.swift in Sources */,
 				544D1A3D22D057FF009F8B2B /* ContentView.swift in Sources */,
 			);
