@@ -70,9 +70,9 @@ struct GradientView : View {
         var body: some View {
             TabbedView {
                 GradientView()
-                    .tabItem { Text("Simple Label") } .tag(0)
+                    .tabItem { Text("Simple Label").font(.footnote) } .tag(0)
                 ContentView()
-                    .tabItem{Text("Gradient View")} .tag(1)
+                    .tabItem {Text("Gradient View")} .tag(1)
             }
         }
     }

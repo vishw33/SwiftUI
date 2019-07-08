@@ -13,12 +13,20 @@ struct Images : View {
         
         VStack(spacing:30){
             Image("Black_Rose")
+            Text ("Original Image")
+                .font(.footnote)
+                .color(Color.gray)
+            
             
             Image("Black_Rose")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100, alignment: .leading)
                 .border(Color.black)
+            
+            Text ("Framed Image")
+                .font(.footnote)
+                .color(Color.gray)
         }
     }
 }
@@ -30,18 +38,30 @@ struct ShapesView:View {
             Circle()
                 .fill(Color.red)
                 .padding()
+            Text ("Circle")
+                .font(.footnote)
+                .color(Color.gray)
                 
             Rectangle()
                 .fill(Color.blue)
                 .padding()
+            Text ("Rectangle")
+                .font(.footnote)
+                .color(Color.gray)
             
             Ellipse()
                 .fill(Color.yellow)
                 .padding()
+            Text ("Ellipse")
+                .font(.footnote)
+                .color(Color.gray)
             
             RoundedRectangle(cornerSize: CGSize(width: 100 , height: 100), style: .circular)
                 .fill(Color.green)
                 .padding()
+            Text ("RoundedRectangle")
+                .font(.footnote)
+                .color(Color.gray)
             
             
         }
@@ -51,6 +71,7 @@ struct ShapesView:View {
 struct ResizeImage:View {
     var body: some View {
         
+        VStack(spacing: 50){
         Image("pink_Rose")
             .resizable()
             .frame(width: 250, height: 250, alignment: .center)
@@ -58,6 +79,24 @@ struct ResizeImage:View {
             .overlay( Circle().stroke(Color.green , lineWidth: 4))
             .aspectRatio(contentMode: .fit)
             .shadow(color: Color.red, radius: 30, x: 3, y: 3)
+        Text ("image resized with circle clamp and shadow and border")
+            .font(.footnote)
+            .color(Color.gray)
+        }
+    }
+}
+
+struct ImgContainer:View {
+    var body: some View {
+        TabbedView {
+            Images()
+                .tabItem{ Text("Normal Image").font(.footnote)}.tag(0)
+            ResizeImage()
+                .tabItem{ Text("Resized Image").font(.footnote)}.tag(1)
+            ShapesView()
+                .tabItem{ Text("Shape in  Image").font(.footnote)}.tag(2)
+            
+        }
     }
 }
 
@@ -77,6 +116,12 @@ struct Images_Previews2 : PreviewProvider {
 struct ResizeImage_Previews2 : PreviewProvider {
     static var previews: some View {
         ResizeImage()
+    }
+}
+
+struct ResizeImage_Previews3 : PreviewProvider {
+    static var previews: some View {
+        ImgContainer()
     }
 }
 

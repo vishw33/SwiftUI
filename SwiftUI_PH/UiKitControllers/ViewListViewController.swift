@@ -27,7 +27,7 @@ class ViewListViewController: UIViewController {
         case 0:
             return UIHostingController(coder: coder, rootView: ViewTab())
         case 1:
-            return UIHostingController(coder: coder, rootView: ShapesView())
+            return UIHostingController(coder: coder, rootView: ImgContainer())
         default:
             return UIHostingController(coder: coder, rootView: Text("Nothing Pushed Here"))
         }
