@@ -29,12 +29,35 @@ struct ShapesView:View {
         VStack(spacing:30){
             Circle()
                 .fill(Color.red)
+                .padding()
                 
             Rectangle()
                 .fill(Color.blue)
-                        
+                .padding()
+            
+            Ellipse()
+                .fill(Color.yellow)
+                .padding()
+            
+            RoundedRectangle(cornerSize: CGSize(width: 100 , height: 100), style: .circular)
+                .fill(Color.green)
+                .padding()
+            
             
         }
+    }
+}
+
+struct ResizeImage:View {
+    var body: some View {
+        
+        Image("pink_Rose")
+            .resizable()
+            .frame(width: 250, height: 250, alignment: .center)
+            .clipShape(Circle())
+            .overlay( Circle().stroke(Color.green , lineWidth: 4))
+            .aspectRatio(contentMode: .fit)
+            .shadow(color: Color.red, radius: 30, x: 3, y: 3)
     }
 }
 
@@ -50,4 +73,11 @@ struct Images_Previews2 : PreviewProvider {
         ShapesView()
     }
 }
+
+struct ResizeImage_Previews2 : PreviewProvider {
+    static var previews: some View {
+        ResizeImage()
+    }
+}
+
 #endif
