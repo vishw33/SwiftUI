@@ -18,14 +18,22 @@ struct ContentView : View {
                 .background(Color.gray)
                 .foregroundColor(Color.red)
                 .font(.largeTitle)
+            Text("Text with back and forgeground color and underline and padding")
+                .font(.footnote)
+                .foregroundColor(Color.gray)
             
             Text("I am God , God is great\nI am God , God is great\nI am God , God is great\nI am God , God is great")
-                .underline(true, color: .blue)
+                .underline(false, color: .blue)
                 .padding(20)
-                .background(Color.gray)
+                .background(Color.clear)
                 .foregroundColor(Color.red)
                 .font(.largeTitle)
                 .lineLimit(nil)
+                .border(Color.black, width: 5)
+            
+            Text("Single Text with multiple line with border and padding")
+                .font(.footnote)
+                .foregroundColor(Color.gray)
         }
     }
 }
@@ -41,15 +49,33 @@ struct GradientView : View {
                 .foregroundColor(Color.red)
                 .background(LinearGradient(gradient: Gradient(colors: [.red , .green , .blue]), startPoint: .leading, endPoint: .trailing), cornerRadius: 10)
             
+            Text("Text with backgroud Linear Gradient")
+                .font(.footnote)
+                .foregroundColor(Color.gray)
+            
             Text("Hello World")
                 .padding()
                 .foregroundColor(.white)
                 .background(AngularGradient(gradient: Gradient(colors: [.red , .yellow ,.white,.black]), center: .center, angle: Angle(degrees: 30)), cornerRadius: 10)
+            Text("Text with backgroud AngularGradient Gradient")
+                .font(.footnote)
+                .foregroundColor(Color.gray)
             
             Text("Vishwas")
         }
     }
 }
+    
+    struct ViewTab:View {
+        var body: some View {
+            TabbedView {
+                GradientView()
+                    .tabItem { Text("Simple Label") } .tag(0)
+                ContentView()
+                    .tabItem{Text("Gradient View")} .tag(1)
+            }
+        }
+    }
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
@@ -63,4 +89,11 @@ struct ContentView_Previews2 : PreviewProvider {
         ContentView()
     }
 }
+
+struct ContentView_Previews3 : PreviewProvider {
+    static var previews: some View {
+        ViewTab()
+    }
+}
+
 #endif
