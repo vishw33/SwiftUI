@@ -86,6 +86,26 @@ struct ResizeImage:View {
     }
 }
 
+struct ImageBackGround:View {
+    var body: some View {
+        VStack (spacing:250){
+        Text("It takes a Village.....")
+            .background(Image("Rose_mixed") .resizable() .frame(width: 200, height: 200, alignment: .center))
+            .font(Font.system(size: 30))
+            .foregroundColor(Color.green)
+            .offset(x: 0, y: 30)
+            
+            
+            Text ("image  with background as Image")
+                .font(.footnote)
+                .color(Color.gray)
+            
+            
+        }
+    }
+    
+}
+
 struct ImgContainer:View {
     var body: some View {
         TabbedView {
@@ -95,10 +115,14 @@ struct ImgContainer:View {
                 .tabItem{ Text("Resized Image").font(.footnote)}.tag(1)
             ShapesView()
                 .tabItem{ Text("Shape in  Image").font(.footnote)}.tag(2)
+            ImageBackGround()
+                .tabItem { Text("Shape in  Image").font(.footnote)}.tag(3)
+                    
+            }
             
         }
     }
-}
+
 
 #if DEBUG
 struct Images_Previews : PreviewProvider {
@@ -122,6 +146,12 @@ struct ResizeImage_Previews2 : PreviewProvider {
 struct ResizeImage_Previews3 : PreviewProvider {
     static var previews: some View {
         ImgContainer()
+    }
+}
+
+struct ResizeImage_Previews4 : PreviewProvider {
+    static var previews: some View {
+        ImageBackGround()
     }
 }
 
