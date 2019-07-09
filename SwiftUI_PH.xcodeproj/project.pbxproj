@@ -16,6 +16,7 @@
 		544D1A4F22D19B40009F8B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544D1A4E22D19B40009F8B2B /* Assets.xcassets */; };
 		544D1A5122D37A3B009F8B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544D1A5022D37A3B009F8B2B /* Main.storyboard */; };
 		544D1A5422D37ADB009F8B2B /* ViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A5322D37ADB009F8B2B /* ViewListViewController.swift */; };
+		5496FE3E22D4C7F700427440 /* StackVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496FE3D22D4C7F700427440 /* StackVertical.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		544D1A4E22D19B40009F8B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		544D1A5022D37A3B009F8B2B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		544D1A5322D37ADB009F8B2B /* ViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListViewController.swift; sourceTree = "<group>"; };
+		5496FE3D22D4C7F700427440 /* StackVertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackVertical.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */,
 				544D1A3C22D057FF009F8B2B /* ContentView.swift */,
 				544D1A4C22D0682D009F8B2B /* Images.swift */,
+				5496FE3D22D4C7F700427440 /* StackVertical.swift */,
 				544D1A4322D05805009F8B2B /* LaunchScreen.storyboard */,
 				544D1A4622D05805009F8B2B /* Info.plist */,
 				544D1A4E22D19B40009F8B2B /* Assets.xcassets */,
@@ -168,6 +171,7 @@
 				544D1A4D22D0682D009F8B2B /* Images.swift in Sources */,
 				544D1A3B22D057FF009F8B2B /* SceneDelegate.swift in Sources */,
 				544D1A5422D37ADB009F8B2B /* ViewListViewController.swift in Sources */,
+				5496FE3E22D4C7F700427440 /* StackVertical.swift in Sources */,
 				544D1A3D22D057FF009F8B2B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -96,7 +96,7 @@ struct ImageBackGround:View {
             .offset(x: 0, y: 30)
             
             
-            Text ("image  with background as Image")
+            Text ("Text with background as Image")
                 .font(.footnote)
                 .color(Color.gray)
             
