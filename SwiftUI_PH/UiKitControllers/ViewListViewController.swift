@@ -11,7 +11,7 @@ import SwiftUI
 
 class ViewListViewController: UIViewController {
     
-    var ViewArray = ["Text" , "Images" , "VStack"]
+    var ViewArray = ["Text" , "Images" , "VStack" , "HStack"]
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -30,6 +30,8 @@ class ViewListViewController: UIViewController {
             return UIHostingController(coder: coder, rootView: ImgContainer())
         case 2:
             return UIHostingController(coder: coder, rootView: VStackContainer())
+        case 3:
+            return UIHostingController(coder: coder, rootView: HStackContainer())
         default:
             return UIHostingController(coder: coder, rootView: Text("Nothing Pushed Here"))
         }

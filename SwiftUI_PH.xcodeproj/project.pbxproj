@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A28DB9722D4E43100568F90 /* StackHorizintal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A28DB9622D4E43100568F90 /* StackHorizintal.swift */; };
 		544D1A3922D057FF009F8B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A3822D057FF009F8B2B /* AppDelegate.swift */; };
 		544D1A3B22D057FF009F8B2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */; };
 		544D1A3D22D057FF009F8B2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A3C22D057FF009F8B2B /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A28DB9622D4E43100568F90 /* StackHorizintal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackHorizintal.swift; sourceTree = "<group>"; };
 		544D1A3522D057FF009F8B2B /* SwiftUI_PH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_PH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544D1A3822D057FF009F8B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				544D1A3C22D057FF009F8B2B /* ContentView.swift */,
 				544D1A4C22D0682D009F8B2B /* Images.swift */,
 				5496FE3D22D4C7F700427440 /* StackVertical.swift */,
+				3A28DB9622D4E43100568F90 /* StackHorizintal.swift */,
 				544D1A4322D05805009F8B2B /* LaunchScreen.storyboard */,
 				544D1A4622D05805009F8B2B /* Info.plist */,
 				544D1A4E22D19B40009F8B2B /* Assets.xcassets */,
@@ -170,6 +173,7 @@
 				544D1A3922D057FF009F8B2B /* AppDelegate.swift in Sources */,
 				544D1A4D22D0682D009F8B2B /* Images.swift in Sources */,
 				544D1A3B22D057FF009F8B2B /* SceneDelegate.swift in Sources */,
+				3A28DB9722D4E43100568F90 /* StackHorizintal.swift in Sources */,
 				544D1A5422D37ADB009F8B2B /* ViewListViewController.swift in Sources */,
 				5496FE3E22D4C7F700427440 /* StackVertical.swift in Sources */,
 				544D1A3D22D057FF009F8B2B /* ContentView.swift in Sources */,
