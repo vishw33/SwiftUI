@@ -49,6 +49,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A1E4BCB22D99D3B00BC42F0 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				5496FE3D22D4C7F700427440 /* StackVertical.swift */,
+				3A28DB9622D4E43100568F90 /* StackHorizintal.swift */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
+		3A1E4BCC22D99D5B00BC42F0 /* StartUpClasses */ = {
+			isa = PBXGroup;
+			children = (
+				544D1A3822D057FF009F8B2B /* AppDelegate.swift */,
+				544D1A5022D37A3B009F8B2B /* Main.storyboard */,
+				544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */,
+			);
+			path = StartUpClasses;
+			sourceTree = "<group>";
+		};
+		3A1E4BCD22D99D7200BC42F0 /* TextandImage */ = {
+			isa = PBXGroup;
+			children = (
+				544D1A3C22D057FF009F8B2B /* ContentView.swift */,
+				544D1A4C22D0682D009F8B2B /* Images.swift */,
+			);
+			path = TextandImage;
+			sourceTree = "<group>";
+		};
+		3A1E4BCE22D99D8400BC42F0 /* NavSetting */ = {
+			isa = PBXGroup;
+			children = (
+				3A28DB9822D5A4CE00568F90 /* SettingStyleList.swift */,
+			);
+			path = NavSetting;
+			sourceTree = "<group>";
+		};
 		544D1A2C22D057FF009F8B2B = {
 			isa = PBXGroup;
 			children = (
@@ -69,14 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				544D1A5222D37AA5009F8B2B /* UiKitControllers */,
-				544D1A3822D057FF009F8B2B /* AppDelegate.swift */,
-				544D1A5022D37A3B009F8B2B /* Main.storyboard */,
-				544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */,
-				3A28DB9822D5A4CE00568F90 /* SettingStyleList.swift */,
-				544D1A3C22D057FF009F8B2B /* ContentView.swift */,
-				544D1A4C22D0682D009F8B2B /* Images.swift */,
-				5496FE3D22D4C7F700427440 /* StackVertical.swift */,
-				3A28DB9622D4E43100568F90 /* StackHorizintal.swift */,
+				3A1E4BCC22D99D5B00BC42F0 /* StartUpClasses */,
+				3A1E4BCE22D99D8400BC42F0 /* NavSetting */,
+				3A1E4BCD22D99D7200BC42F0 /* TextandImage */,
+				3A1E4BCB22D99D3B00BC42F0 /* Stacks */,
 				544D1A4322D05805009F8B2B /* LaunchScreen.storyboard */,
 				544D1A4622D05805009F8B2B /* Info.plist */,
 				544D1A4E22D19B40009F8B2B /* Assets.xcassets */,
