@@ -18,6 +18,7 @@ struct ContentView : View {
                 .background(Color.gray)
                 .foregroundColor(Color.red)
                 .font(.largeTitle)
+                .multilineTextAlignment(.center)
             Text("Text with back and forgeground color and underline and padding")
                 .font(.footnote)
                 .foregroundColor(Color.gray)
@@ -34,6 +35,7 @@ struct ContentView : View {
             Text("Single Text with multiple line with border and padding")
                 .font(.footnote)
                 .foregroundColor(Color.gray)
+                .multilineTextAlignment(.center)
         }
     }
 }

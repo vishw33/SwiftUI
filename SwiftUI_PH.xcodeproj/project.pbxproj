@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A28DB9722D4E43100568F90 /* StackHorizintal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A28DB9622D4E43100568F90 /* StackHorizintal.swift */; };
 		3A28DB9922D5A4CE00568F90 /* SettingStyleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A28DB9822D5A4CE00568F90 /* SettingStyleList.swift */; };
+		3A3126B122D9A282004FA134 /* Text_Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3126B022D9A282004FA134 /* Text_Field.swift */; };
 		544D1A3922D057FF009F8B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A3822D057FF009F8B2B /* AppDelegate.swift */; };
 		544D1A3B22D057FF009F8B2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */; };
 		544D1A3D22D057FF009F8B2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D1A3C22D057FF009F8B2B /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		3A28DB9622D4E43100568F90 /* StackHorizintal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackHorizintal.swift; sourceTree = "<group>"; };
 		3A28DB9822D5A4CE00568F90 /* SettingStyleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStyleList.swift; sourceTree = "<group>"; };
+		3A3126B022D9A282004FA134 /* Text_Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text_Field.swift; sourceTree = "<group>"; };
 		544D1A3522D057FF009F8B2B /* SwiftUI_PH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_PH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544D1A3822D057FF009F8B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		544D1A3A22D057FF009F8B2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 			path = NavSetting;
 			sourceTree = "<group>";
 		};
+		3A1E4BCF22D99DCB00BC42F0 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				3A3126B022D9A282004FA134 /* Text_Field.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		544D1A2C22D057FF009F8B2B = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		544D1A3722D057FF009F8B2B /* SwiftUI_PH */ = {
 			isa = PBXGroup;
 			children = (
+				3A1E4BCF22D99DCB00BC42F0 /* TextField */,
 				544D1A5222D37AA5009F8B2B /* UiKitControllers */,
 				3A1E4BCC22D99D5B00BC42F0 /* StartUpClasses */,
 				3A1E4BCE22D99D8400BC42F0 /* NavSetting */,
@@ -206,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				544D1A3922D057FF009F8B2B /* AppDelegate.swift in Sources */,
+				3A3126B122D9A282004FA134 /* Text_Field.swift in Sources */,
 				544D1A4D22D0682D009F8B2B /* Images.swift in Sources */,
 				544D1A3B22D057FF009F8B2B /* SceneDelegate.swift in Sources */,
 				3A28DB9722D4E43100568F90 /* StackHorizintal.swift in Sources */,

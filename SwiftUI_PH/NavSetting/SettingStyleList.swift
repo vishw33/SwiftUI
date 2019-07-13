@@ -42,6 +42,15 @@ struct SettingStyleList : View {
                             .color(.red)
                     }
                 }
+                
+                Section(header:(Text("TextField").bold())) {
+                    NavigationLink(destination: Container_Text()) {
+                        Text("TextFiield")
+                            .fontWeight(.bold)
+                            .color(.red)
+                    }
+                    
+                }
             }
         }
         .navigationBarTitle(Text("SwiftUI Controls") .color(.blue) ,displayMode: .inline)
