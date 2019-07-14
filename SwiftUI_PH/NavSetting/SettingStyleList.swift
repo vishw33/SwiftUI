@@ -51,6 +51,32 @@ struct SettingStyleList : View {
                     }
                     
                 }
+                
+                Section(header:(Text("Picker").bold())) {
+                    NavigationLink(destination: Picker_Container()) {
+                        Text("Picker")
+                            .fontWeight(.bold)
+                            .color(.red)
+                    }
+                    
+                    NavigationLink(destination: DatePicker_Container()) {
+                        Text("Date Picker")
+                            .fontWeight(.bold)
+                            .color(.red)
+                    }
+                    
+                }
+
+                
+//                Section(header:(Text("Tryout").bold())) {
+//                    NavigationLink(destination: datePicker_Form()) {
+//                        Text("try")
+//                            .fontWeight(.bold)
+//                            .color(.red)
+//                    }
+//                    
+//                }
+                
             }
         }
         .navigationBarTitle(Text("SwiftUI Controls") .color(.blue) ,displayMode: .inline)
