@@ -66,6 +66,21 @@ struct SettingStyleList : View {
                     }
                     
                 }
+                
+                Section(header:(Text("Action and Alert").bold())) {
+                    NavigationLink(destination: Action_View()) {
+                        Text("Action")
+                            .fontWeight(.bold)
+                            .color(.red)
+                    }
+                    
+                    NavigationLink(destination: DatePicker_Container()) {
+                        Text("Alert")
+                            .fontWeight(.bold)
+                            .color(.red)
+                    }
+                    
+                }
 
                 
 //                Section(header:(Text("Tryout").bold())) {
@@ -78,9 +93,10 @@ struct SettingStyleList : View {
 //                }
                 
             }
+            .navigationBarTitle(Text("SwiftUI Controls") .color(.blue) ,displayMode: .inline)
+                .statusBar(hidden: false)
         }
-        .navigationBarTitle(Text("SwiftUI Controls") .color(.blue) ,displayMode: .inline)
-        .statusBar(hidden: false)
+        
         
         
         

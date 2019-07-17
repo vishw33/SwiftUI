@@ -83,12 +83,25 @@ struct datePicker_Form : View {
 struct datePicker_component: View {
     @State var datePicked = Date()
     
+    func datesToSet(isMin:Bool) -> Date {
+        let calendar = Calendar(identifier: .gregorian)
+        var comps = DateComponents()
+        comps.year = isMin ? -30 : 30
+        let minDate = calendar.date(byAdding: comps, to: Date())
+        guard let datetosend = minDate else {
+            return Date()
+        }
+        return datetosend
+    }
+   
+  
+    
     var body : some View {
         Form {
             Section {
                 DatePicker(
                     $datePicked,
-                    minimumDate: Date().addingTimeInterval(-124.0 * 60.0 * 60.0),
+                    minimumDate: datesToSet(isMin: true),
                     maximumDate: Date(),
                     displayedComponents: [.hourAndMinute],
                     label: { Text("Hour and Min") }
@@ -98,7 +111,7 @@ struct datePicker_component: View {
             Section {
                 DatePicker(
                     $datePicked,
-                    minimumDate: Date().addingTimeInterval(-124.0 * 60.0 * 60.0),
+                    minimumDate: datesToSet(isMin: true),
                     maximumDate: Date(),
                     displayedComponents: [ .date],
                     label: { Text("Date") }

@@ -24,9 +24,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
 //            let listCntr:ViewListViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewListViewController") as! ViewListViewController
 //            let navCntr = UINavigationController(rootViewController: listCntr)
-            window.rootViewController = UIHostingController(rootView: NavigationView{ SettingStyleList()})
-            self.window = window
-            window.makeKeyAndVisible()
+            
+            if let windowScene = scene as? UIWindowScene {
+                let window = UIWindow(windowScene: windowScene)
+                window.rootViewController = UIHostingController(rootView:
+                    
+                     SettingStyleList())
+                self.window = window
+                window.makeKeyAndVisible()
+                
+//            window.rootViewController = UIHostingController(rootView: NavigationView{ SettingStyleList()})
+//            self.window = window
+//            window.makeKeyAndVisible()
         }
     }
 
@@ -58,6 +67,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    }
 }
 
