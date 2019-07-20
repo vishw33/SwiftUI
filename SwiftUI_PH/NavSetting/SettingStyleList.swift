@@ -74,7 +74,7 @@ struct SettingStyleList : View {
                             .color(.red)
                     }
                     
-                    NavigationLink(destination: DatePicker_Container()) {
+                    NavigationLink(destination: Alert_Container()) {
                         Text("Alert")
                             .fontWeight(.bold)
                             .color(.red)
