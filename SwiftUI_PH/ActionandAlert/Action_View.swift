@@ -18,7 +18,7 @@ struct Action_View : View {
     
     var body: some View {
         Button(action: {
-            self.showActionSheet = true
+            self.showActionSheet = self.showActionSheet ? false : true
         }, label: { Text("Action Sheet") })
             .presentation(showActionSheet ? myactionSheet: nil)        
     }
