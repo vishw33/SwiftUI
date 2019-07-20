@@ -28,43 +28,57 @@ struct Action_View : View {
 
 struct ActionSheet_Buttond:View {
     @State private var showActionSheet = false
-    @State private var isUpdated = true
-    var team = "Choose team"
+    @State private var isUpdated = false
+    var color:[Color] = [.red ,.green , .blue]
+    @State private var team:Color = .white
     
     var myactionSheet:ActionSheet {
         
         
-        ActionSheet(title: Text("My Action Sheet"), message: Text("Choose your Fav Team"), buttons: [.default(Text("Team Red"), onTrigger: {
-                self.showActionSheet = false
-                self.isUpdated = true
+        ActionSheet(title: Text("My Action Sheet"), message: Text("Choose your Fav Color"), buttons: [.default(Text("Team Red"), onTrigger: {
+            self.showActionSheet = false
+            self.team = .red
         }),.default(Text("Team Blue"), onTrigger: {
             self.showActionSheet = false
-            self.isUpdated = true
+            self.team = .blue
+            
         }) ,.default(Text("Team Green"), onTrigger: {
             self.showActionSheet = false
-            self.isUpdated = true
+            self.team = .green
+            
         }), .cancel({
             self.showActionSheet = false
         })
         ])
     }
     
-    
     var body :some View {
         
         VStack() {
-    
-            if isUpdated {
-                Text(team)
-            } else {
-                /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
-            }
             Button(action: {
                 self.showActionSheet = self.showActionSheet ? false : true
-            }, label: { Text("Action Sheet") })
+                self.isUpdated = true
+            }, label: { Text("Action Sheet").color(.black) })
                 .presentation($showActionSheet) { () -> ActionSheet in
-                    myactionSheet
+                    return myactionSheet
             }
+        }.frame(width: 350, height: 700, alignment: .center)
+        .background(self.team)
+    }
+    
+}
+
+struct ActionSheet_Container : View {
+    
+    var body:some View {
+        TabbedView {
+            Action_View()
+                .tabItem { Text("Date_Picker_Stack")
+            }.tag(0)
+            
+            ActionSheet_Buttond()
+                .tabItem { Text("DatePicker_formatter")
+            }.tag(1)
         }
     }
     

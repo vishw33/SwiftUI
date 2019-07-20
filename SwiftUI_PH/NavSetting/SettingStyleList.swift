@@ -68,7 +68,7 @@ struct SettingStyleList : View {
                 }
                 
                 Section(header:(Text("Action and Alert").bold())) {
-                    NavigationLink(destination: Action_View()) {
+                    NavigationLink(destination: ActionSheet_Container()) {
                         Text("Action")
                             .fontWeight(.bold)
                             .color(.red)
