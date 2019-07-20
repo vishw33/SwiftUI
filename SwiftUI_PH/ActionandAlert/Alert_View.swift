@@ -70,7 +70,6 @@ struct Alert_Container : View {
             }.tag(2)
         }
     }
-    
 }
 
 #if DEBUG
