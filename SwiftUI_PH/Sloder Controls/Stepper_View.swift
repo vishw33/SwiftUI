@@ -16,8 +16,12 @@ struct Stepper_View : View {
         Stepper(
             onIncrement: { self.count += 1 },
             onDecrement: { self.count -= 1 },
-            label: { Text("Count is \(count)") }
+            label: { Text("Count is \(count)").bold()
+                .foregroundColor(.orange)
+        }
         )
+        .padding([.leading , .trailing])
+        .accentColor(.red)
     }
 }
 
