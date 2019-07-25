@@ -15,7 +15,7 @@ struct Images : View {
             Image("Black_Rose")
             Text ("Original Image")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
             
             
             Image("Black_Rose")
@@ -26,7 +26,7 @@ struct Images : View {
             
             Text ("Framed Image")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
         }
     }
 }
@@ -40,28 +40,28 @@ struct ShapesView:View {
                 .padding()
             Text ("Circle")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
                 
             Rectangle()
                 .fill(Color.blue)
                 .padding()
             Text ("Rectangle")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
             
             Ellipse()
                 .fill(Color.yellow)
                 .padding()
             Text ("Ellipse")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
             
             RoundedRectangle(cornerSize: CGSize(width: 100 , height: 100), style: .circular)
                 .fill(Color.green)
                 .padding()
             Text ("RoundedRectangle")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
             
             
         }
@@ -81,7 +81,7 @@ struct ResizeImage:View {
             .shadow(color: Color.red, radius: 30, x: 3, y: 3)
         Text ("image resized with circle clamp and shadow and border")
             .font(.footnote)
-            .color(Color.gray)
+            .foregroundColor(Color.gray)
         }
     }
 }
@@ -98,7 +98,7 @@ struct ImageBackGround:View {
             
             Text ("Text with background as Image")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
             
             
         }

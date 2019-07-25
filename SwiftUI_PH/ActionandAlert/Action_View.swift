@@ -20,8 +20,8 @@ struct Action_View : View {
         Button(action: {
             self.showActionSheet = self.showActionSheet ? false : true
         }, label: { Text("Action Sheet") })
-            .presentation($showActionSheet) { () -> ActionSheet in
-                myactionSheet
+            .actionSheet(isPresented: $showActionSheet) { () -> ActionSheet in
+                               myactionSheet
         }
     }
 }
@@ -58,9 +58,9 @@ struct ActionSheet_Buttond:View {
             Button(action: {
                 self.showActionSheet = self.showActionSheet ? false : true
                 self.isUpdated = true
-            }, label: { Text("Action Sheet").color(.black) })
-                .presentation($showActionSheet) { () -> ActionSheet in
-                    return myactionSheet
+            }, label: { Text("Action Sheet").foregroundColor(.black) })
+                .actionSheet(isPresented: $showActionSheet) { () -> ActionSheet in
+                    myactionSheet
             }
         }.frame(width: 350, height: 700, alignment: .center)
         .background(self.team)

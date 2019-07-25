@@ -22,11 +22,11 @@ struct Text_Field : View {
             Spacer()
             Text("Unlike in UIKit , here you use Binding method to read the textfield value here")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
                 .lineLimit(5)
             Text("Binding is done with Key Word @State")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
             Spacer()
         }
         
@@ -47,7 +47,7 @@ struct Secure_Field:View {
             Spacer()
             Text("Secure Textfield is used for passwords where text is not exposed to viewr but collected in variable")
                 .font(.footnote)
-                .color(Color.gray)
+                .foregroundColor(Color.gray)
                 .lineLimit(nil)
             Spacer()
         }

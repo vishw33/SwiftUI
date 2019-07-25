@@ -12,20 +12,22 @@ struct Picker_Date : View {
     @State private var mydate = Date()
     var body: some View {
         VStack {
-            DatePicker($mydate)
+            DatePicker(selection: $mydate) { () -> EmptyView in
+                
+            }
             Text("Date and time is \(mydate)")
                 .padding()
                 .lineLimit(nil)
             Spacer()
             Text("This is simple date Picker")
                 .font(.footnote)
-                .color(.gray)
+                .foregroundColor(.gray)
             Spacer()
         }
     }
 }
 
-struct Picker_Formatter : View {
+/* struct Picker_Formatter : View {
     
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -44,7 +46,7 @@ struct Picker_Formatter : View {
             Spacer()
             Text("This is simple date Picker with Formatter")
                 .font(.footnote)
-                .color(.gray)
+                .foregroundColor(.gray)
             Spacer()
         }
     }
@@ -72,7 +74,7 @@ struct datePicker_Form : View {
             Spacer()
             Text("This is simple date Picker with Form")
                 .font(.footnote)
-                .color(.gray)
+                .foregroundColor(.gray)
             Spacer()
         }
         
@@ -124,11 +126,12 @@ struct datePicker_component: View {
             Section {
                 Text("This is simple date Picker with Form and date Components")
                     .font(.footnote)
-                    .color(.gray)
+                    .foregroundColor(.gray)
             }
         }
     }
 }
+*/
 
 struct DatePicker_Container : View {
     
@@ -138,24 +141,24 @@ struct DatePicker_Container : View {
                 .tabItem { Text("Date_Picker_Stack")
             }.tag(0)
                 
-            Picker_Formatter()
-                .tabItem { Text("DatePicker_formatter")
-            }.tag(1)
-            
-            datePicker_Form()
-                .tabItem { Text("DatePicker_Form")
-            }.tag(2)
-            
-            datePicker_component()
-                .tabItem { Text("DatePicker_component")
-            }.tag(3)
+//            Picker_Formatter()
+//                .tabItem { Text("DatePicker_formatter")
+//            }.tag(1)
+//
+//            datePicker_Form()
+//                .tabItem { Text("DatePicker_Form")
+//            }.tag(2)
+//
+//            datePicker_component()
+//                .tabItem { Text("DatePicker_component")
+//            }.tag(3)
         }
     }
     
 }
 
 #if DEBUG
-struct Picker_Date_Previews : PreviewProvider {
+/*struct Picker_Date_Previews : PreviewProvider {
     static var previews: some View {
         datePicker_component()
     }
@@ -178,6 +181,8 @@ struct Picker_Date_Previews4 : PreviewProvider {
         datePicker_component()
     }
 }
+
+*/
 struct Picker_Date_Previews5 : PreviewProvider {
     static var previews: some View {
         DatePicker_Container()

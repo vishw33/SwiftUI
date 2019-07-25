@@ -18,43 +18,43 @@ struct SettingStyleList : View {
                     NavigationLink(destination: ViewTab()) {
                         Text("Text")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                     NavigationLink(destination: ImgContainer()) {
                         Text("Images")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                 }
                 Section(header: (Text("Stacks").bold())) {
                     NavigationLink(destination: VStackContainer()) {
                         Text("VStack")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                     NavigationLink(destination: HStackContainer()) {
                         Text("HStack")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundforegroundColor(.red)
                     }
                 }
                 Section(header:(Text("TextField").bold())) {
                     NavigationLink(destination: Container_Text()) {
                         Text("TextFiield")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                 }
                 Section(header:(Text("Picker").bold())) {
                     NavigationLink(destination: Picker_Container()) {
                         Text("Picker")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                     NavigationLink(destination: DatePicker_Container()) {
                         Text("Date Picker")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                 }
                 
@@ -62,12 +62,12 @@ struct SettingStyleList : View {
                     NavigationLink(destination: ActionSheet_Container()) {
                         Text("Action")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                     NavigationLink(destination: Alert_Container()) {
                         Text("Alert")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                 }
                 
@@ -75,21 +75,21 @@ struct SettingStyleList : View {
                     NavigationLink(destination: Toggle_Stepper()) {
                         Text("Toggle")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                     NavigationLink(destination: Container_swt()) {
                         Text("Slider")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                     NavigationLink(destination: Stepper_View()) {
                         Text("Stepper")
                             .fontWeight(.bold)
-                            .color(.red)
+                            .foregroundColor(.red)
                     }
                 }
             }
-            .navigationBarTitle(Text("SwiftUI Controls") .color(.blue) ,displayMode: .inline)
+            .navigationBarTitle(Text("SwiftUI Controls") .foregroundColor(.blue) ,displayMode: .inline)
                 .statusBar(hidden: false)
         }
     }

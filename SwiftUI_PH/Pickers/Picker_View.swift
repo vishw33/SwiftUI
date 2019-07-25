@@ -26,7 +26,7 @@ struct MyPicker : View {
             
             Text("Picker worker differently when placed in stack and in Form")
                 .font(.footnote)
-                .color(.gray)
+                .foregroundColor(.gray)
             Spacer()
         }
     }

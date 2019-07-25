@@ -17,7 +17,7 @@ struct Alert_View : View {
         }) {
             Text("Show Alert")
         }
-        .presentation($showingAlert) {
+        .alert(isPresented: $showingAlert) { () -> Alert in
             Alert(title: Text("This is simple Alert"))
         }
     }
@@ -32,8 +32,9 @@ struct Alert_View2 : View {
         }) {
             Text("Show Alert")
         }
-        .presentation($showingAlert) {
-            Alert(title: Text("This is Title"), message: Text("Message Dialog Box"), dismissButton: .cancel())
+        .alert(isPresented: $showingAlert) { () -> Alert in
+                Alert(title: Text("This is Title"), message: Text("Message Dialog Box"), dismissButton: .cancel())
+
         }
     }
 }
@@ -47,8 +48,8 @@ struct Alert_View3 : View {
         }) {
             Text("Show Alert")
         }
-        .presentation($showingAlert) {
-            Alert(title: Text("Title"), message: Text("Message to log in or Sign out"), primaryButton: .destructive(Text("Sign Out")), secondaryButton: .default(Text("Log In")))
+        .alert(isPresented: $showingAlert) { () -> Alert in
+             Alert(title: Text("Title"), message: Text("Message to log in or Sign out"), primaryButton: .destructive(Text("Sign Out")), secondaryButton: .default(Text("Log In")))
         }
     }
 }
