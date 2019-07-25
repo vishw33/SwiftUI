@@ -14,49 +14,10 @@ struct SettingStyleList : View {
         
         NavigationView {
             Form {
-                Section(header: (Text("Text and Images").bold())) {
-                    NavigationLink(destination: ViewTab()) {
-                        Text("Text")
-                            .fontWeight(.bold)
-                            .foregroundColor(.red)
-                    }
-                    NavigationLink(destination: ImgContainer()) {
-                        Text("Images")
-                            .fontWeight(.bold)
-                            .foregroundColor(.red)
-                    }
-                }
-                Section(header: (Text("Stacks").bold())) {
-                    NavigationLink(destination: VStackContainer()) {
-                        Text("VStack")
-                            .fontWeight(.bold)
-                            .foregroundColor(.red)
-                    }
-                    NavigationLink(destination: HStackContainer()) {
-                        Text("HStack")
-                            .fontWeight(.bold)
-                            .foregroundforegroundColor(.red)
-                    }
-                }
-                Section(header:(Text("TextField").bold())) {
-                    NavigationLink(destination: Container_Text()) {
-                        Text("TextFiield")
-                            .fontWeight(.bold)
-                            .foregroundColor(.red)
-                    }
-                }
-                Section(header:(Text("Picker").bold())) {
-                    NavigationLink(destination: Picker_Container()) {
-                        Text("Picker")
-                            .fontWeight(.bold)
-                            .foregroundColor(.red)
-                    }
-                    NavigationLink(destination: DatePicker_Container()) {
-                        Text("Date Picker")
-                            .fontWeight(.bold)
-                            .foregroundColor(.red)
-                    }
-                }
+                TextSection()
+                StackViewSection()
+                TextfieldSection()
+                PickerSection()
                 
                 Section(header:(Text("Action and Alert").bold())) {
                     NavigationLink(destination: ActionSheet_Container()) {
@@ -104,3 +65,66 @@ struct SettingStyleList_Previews : PreviewProvider {
     }
 }
 #endif
+
+struct TextSection: View {
+    var body: some View {
+        Section(header: (Text("Text and Images").bold())) {
+            NavigationLink(destination: ViewTab()) {
+                Text("Text")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+            NavigationLink(destination: ImgContainer()) {
+                Text("Images")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+        }
+    }
+}
+
+struct StackViewSection: View {
+    var body: some View {
+        Section(header: (Text("Stacks").bold())) {
+            NavigationLink(destination: VStackContainer()) {
+                Text("VStack")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+            NavigationLink(destination: HStackContainer()) {
+                Text("HStack")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+        }
+    }
+}
+
+struct TextfieldSection: View {
+    var body: some View {
+        Section(header:(Text("TextField").bold())) {
+            NavigationLink(destination: Container_Text()) {
+                Text("TextFiield")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+        }
+    }
+}
+
+struct PickerSection: View {
+    var body: some View {
+        Section(header:(Text("Picker").bold())) {
+            NavigationLink(destination: Picker_Container()) {
+                Text("Picker")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+            NavigationLink(destination: DatePicker_Container()) {
+                Text("Date Picker")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+        }
+    }
+}
